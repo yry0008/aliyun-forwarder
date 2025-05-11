@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  aliyun-forwarder:
+    image: ghcr.io/yry0008/aliyun-forwarder:latest
+    container_name: aliyun-forwarder
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - aliyun-forwarder-net
+    ports:
+      - "8000:8000"
+    restart: always
+
+networks:
+  aliyun-forwarder-net:
+    driver: bridge

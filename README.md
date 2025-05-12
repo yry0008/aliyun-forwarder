@@ -19,7 +19,7 @@ Clone the repository, install requirements and run the server using Python.
 git clone https://github.com/yry0008/aliyun-forwarder.git
 cd aliyun-forwarder
 pip install -r requirements.txt
-python3 -m main.py
+python3 main.py
 ```
 
 ## Usage
